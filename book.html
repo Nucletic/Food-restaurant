@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Book || Food. || restraunt || Priyanshu designs</title>
+</head>
+
+<body>
+
+
+    <header>
+        <a href="index.html" class="logo">Food<span>.</span></a>
+        <ul class="navigation" id="navigation">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="book.html">BOOK</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </header>
+
+
+    <section id="bookpage">
+        <div class="content">
+            <h2>Book a table</h2>
+        </div>
+        <div class="scroll" id="scroll">
+            <a href="#bookpage"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+
+    <section id="book">
+        <div class="title">
+            <br>
+            <br>
+            <h1><span>B</span>ook a Table</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="form">
+            <form action="index.php" method="post">
+                <select name="seat" class="seat">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                </select><br>
+                <input type="date" name="date" class="date"><br>
+                <select name="time" class="time">
+                    <option>1:00</option>
+                    <option>2:00</option>
+                    <option>3:00</option>
+                    <option>4:00</option>
+                    <option>5:00</option>
+                    <option>6:00</option>
+                    <option>7:00</option>
+                    <option>8:00</option>
+                    <option>9:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                </select>
+                <input type="number" name="phone" class="phone" placeholder="Enter Mobile">
+                <input type="submit" name="submit" value="BOOK" class="submit">
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora voluptate dolores fugiat.<br>
+            Autem commodi eligendi fugiat magni totam modi aperiam.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <p class="copyright">Made With<i class="fa fa-heart-o"></i>Priyanshu Designs</p>
+    </footer>
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            var scroll = document.getElementById('scroll');
+
+            header.classList.toggle("sticky", window.scrollY > 0);
+            scroll.classList.toggle("dis", window.scrollY > 0);
+        })
+    </script>
+    <script>
+        var navigation = document.getElementById("navigation");
+
+        function showMenu() {
+            navigation.style.right = "0";
+        }
+        function hideMenu() {
+            navigation.style.right = "-200px";
+
+        }
+    </script>
+</body>
+
+</html>
